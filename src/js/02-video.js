@@ -12,10 +12,6 @@ function onCurrentVideoTime(data) {
     localStorage.setItem("videoplayer-current-time", data.seconds);
 }
 
-player.getVideoTitle().then(function (title) {
-    console.log('title:', title);
-});
-
 player.setCurrentTime(currentVideoTime).then(function (seconds) {
     // seconds = the actual time that the player seeked to
 }).catch(function (error) {
